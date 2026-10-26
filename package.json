@@ -1,0 +1,18 @@
+{
+  "name": "network-packet-sim-lab",
+  "version": "1.0.0",
+  "description": "Multi-node room-based real-time chat, file transfer, and network packet visualizer",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "client-install": "cd client && npm install",
+    "build": "cd client && npm install && npm run build",
+    "render-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}
